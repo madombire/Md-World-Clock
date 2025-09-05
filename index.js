@@ -63,6 +63,10 @@ function updateCity(event) {
     return;
   }
 
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
+
   // Update immediately
   updateSelectedCity(cityTimeZone);
 
