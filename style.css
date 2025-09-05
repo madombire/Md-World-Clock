@@ -1,18 +1,37 @@
 body {
-  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #d1b3ff; /* lighter shade of blueviolet */
   font-family: Arial, sans-serif;
+  color: #121212;
 }
 
+.container {
+  background: rgb(42, 6, 74); /* darker contrasting shade */
+  border-radius: 16px;
+  padding: 40px;
+  margin: 60px 0;
+  text-align: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4); /* fixed */
+  max-width: 800px;
+  width: 90%;
+  color: #f0f0f0; /* keep text readable */
+}
 footer {
   text-align: center;
   padding: 10px;
   font-size: 0.9rem;
-  color: #f0f0f0;
+  color: #121212;
   position: fixed;
   bottom: 0;
   width: 100%;
 }
+
 a {
   color: #ffcc00;
-  text-decoration: brown underline;
+  text-decoration: underline;
+  text-decoration-color: brown;
 }
