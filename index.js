@@ -44,6 +44,7 @@ function updateSelectedCity(cityTimeZone) {
         <small>${cityTime.format("A")}</small>
       </div>
     </div>
+      <a href="/">All cities</a>
   `;
 }
 
@@ -51,7 +52,6 @@ function updateCity(event) {
   let cityTimeZone = event.target.value;
   let citiesElement = document.querySelector("#cities");
 
-  // Clear any previous interval
   if (selectedCityInterval) {
     clearInterval(selectedCityInterval);
     selectedCityInterval = null;
